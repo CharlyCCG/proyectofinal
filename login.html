@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEX Computing</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/login.css">
+   
+</head>
+<body>
+   
+    <div id="contenedor_principal">
+           
+        <div id="contenedorcentrado">
+            <div id="login">
+                <form action="./login.php" id="loginform" name="loginform" method= "post">
+
+                    <label for="nombre">Nombre/Email</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="nombre" required>
+                    
+                    <label for="password">Contraseña</label>
+                    <input id="password" type="password" placeholder="Contraseña" name="password" required>
+                    
+                    <button type="submit" title="Ingresar" name="Ingresar" value="Enviar">Login</button>
+                </form>
+                
+            </div>
+            <div id="mensajes">
+                <div class="titulo">
+                    LEX - Computing
+                </div>
+                <hr>
+                <div class="pie-form">
+                    <a href="#">¿Olvidaste la contraseña?</a>
+                    <a href="./registrarse.html"   >Registrarse</a>
+                    <hr>
+                    <a href="./prueba.html" target="frame_principal">« Volver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    /*<script src= "./validacion.js"></script>*/
+  
+</body>
+</html>

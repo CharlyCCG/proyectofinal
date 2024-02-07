@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEX Computing</title>
+    
+    <link rel="stylesheet" href="./static/css/registrarse.css">
+    
+</head>
+<body>
+    <div cass="contenedor">
+        <form class="formregistro" id="formregistro"  action="./registrarse.php" method="post">
+            <div>
+                <h1 align="center" >FORMULARIO DE REGISTRO</h1><br>
+
+                <label for="dni">DNI  *</label><br> 
+                <input type="text" name="dni" id="dni" ><br>
+
+                <label for="nombre">Nombre  *</label><br> 
+                <input type="text" name="nombre" id="nombre" ><br>
+                
+                <label for="apellido" ">Apellido  *</label><br>
+                <input type="text" name="apellido" id="apellido"  ><br>
+                
+                <label for="email">Email  *</label><br>
+                <input type="email" name="email" id="email" ><br>
+                
+                <label for="mailr">Repita el Email  *</label><br>
+                <input type="email" name="mailr" id="mailr" ><br>
+                
+                <label for="password">Contraseña  *</label><br>
+                <input type="password" id="password" name="password" ><br>
+                
+                <label for="pais">PAIS  *</label><br>
+                <select name="pais" id="pais">
+                    <option value="ARG">Argentina</option>
+                    <option value="BRA">Brasil</option>
+                    <option value="URU">Uruguay</option>               
+                </select><br><br>   
+
+                <label for="">* Campo obligarotio</label><br>
+       
+                <input type=submit  name="enviar" value="Enviar"  /> <br><br>
+            </div>    
+        </form>
+    </div>
+   
+
+<script  src="./registrarse.js"></script> 
+</body>
+</html>

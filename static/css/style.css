@@ -1,0 +1,357 @@
+/* ################# CONFIGURACIÓN GENERAL ##################### */
+/*###############################################################*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'nunito sans-serif';
+    text-decoration: none;
+}
+
+body{
+       
+    width: 100%;
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #1b262c;
+    margin: 0;
+     background-color: #0359ab ; 
+    height: auto;
+}
+
+ 
+/* ################# PARÁMETROS DE LA CABECRA ################## */
+/*###############################################################*/
+
+/* ########################## HEADER ############################*/
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.header__superior{
+    display:flex;
+    justify-content: space-between;  
+    background: #9ec3f3 ;
+    /* max-width: 1200px; */
+    margin: auto;
+    align-items: center;
+    padding:20px 70px;
+    height: 80px; 
+    width: 100%;
+}
+
+/* ################# PARÁMETROS DEL LOGO DEL HEADER ################# */
+/*####################################################################*/
+
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+.search input{
+    width: 300px;
+    padding:10px;
+}
+
+/* ################ BOTON DE INICIO DE SESION HEADER #################*/
+/*####################################################################*/
+
+.header .btn button{ /* Defino propiedades del boton de contacto*/
+
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px ;
+    
+    background: #eccff1;
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+    }
+    
+header .btn button:hover{ /*DeFino propieddades del boton contacto cuando me posiciono arriba*/
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}    
+
+/* ############## BARRA DE NAVEGACIÓN MENU EN EL HEADER ##############*/
+/*####################################################################*/
+
+.container__menu{
+
+width: 100%;
+height: 70px; 
+background-color: rgb(5, 5, 102);
+padding: 0px 20px;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+.menu nav{
+    height: 100%;
+}
+
+.menu nav >ul{
+    height: 100%;
+    display:flex;
+}
+
+.menu nav ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.menu nav >ul >li >a{
+
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    color:white;
+    padding:14px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+.menu nav >ul >li >a:hover{
+
+    transform: scale(1.1);
+    background-color: #0074c7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,5);    
+}
+
+/* ############### SUBMENU  DENTRO DEL MENU DEL HEADER ###############*/
+/*####################################################################*/
+
+.menu nav ul li ul{
+    width: 200px;
+    display:flex;
+    flex-direction: column;
+    background:#fff  ;
+    position:absolute;
+    top:90px;
+    left: -5px;
+    padding:14px 0px;
+    visibility:hidden;
+    opacity:0 ;    
+    box-shadow: 0px 0px 10px 0px  rgba(0,0,0,5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+.menu nav ul li:hover ul{ /* CUANDO PASO EL MOUSE POR EL MENU APARECE EL SUBMENU */
+
+    visibility: visible;
+    opacity: 1;
+    top:70px;
+}
+
+.menu nav ul li ul a{ /* PARAMETROS DEL a DETRO DEL MENU */
+ 
+    display: block;
+    color:#0099e0; 
+    padding:6px;
+    padding-left:  14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase; /* TRANSFORMO EN MAYUSCULAS */
+    transition: all 300ms ease;
+
+}
+
+.menu nav ul li ul a:hover{
+
+    background: #0074c7;
+    color:white;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px  rgba(0,0,0,5); /*LE DOY UNA SOMBRA CUANDO PASO EL MOUSE */
+
+}
+
+/* #################### PARÁMETROS DEL MAIL Y FRAME ##################*/
+/*####################################################################*/
+
+main {
+    width: 100%;
+    height: auto;
+    float:left;
+    margin-top: 150px; 
+    
+            
+} 
+ 
+.frame1{
+    float: left;
+    width: 65%;
+    height:1000px;
+    background-color: #eea411;
+    
+} 
+
+/* ############ PARÁMETROS DE LA BARRA LATERAL IZQUIERDA #############*/
+/*####################################################################*/
+
+
+.menu__lateral {
+    
+    float:left; 
+    width: 20%; height: 1000px;
+    background-color: #719192;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.menu__lateral nav {
+    
+    width: 100%;
+    background-color: #1b3039; /*CAMBIAR COLOR*/ 
+    
+}
+
+
+.menu__lateral nav ul{
+
+width: auto;
+height: 990px;
+
+}
+
+.menu__lateral ul li{
+
+width: auto;
+height: auto;
+list-style: none ; /*Saco las viñetas*/
+padding:10px; /* Manejo separacion de opciones */
+position:relative; 
+
+}
+
+
+.menu__lateral nav >ul >li >a{
+
+    width: 100px;
+    height: auto;
+    color:white;
+    padding:15px;
+    text-transform: uppercase;
+    font-size: 15px; /* VER TAMAÑO 20px*/ 
+    transition: all 300ms ease; 
+    
+}
+
+.menu__lateral nav >ul >li >a:hover{
+
+    transform: scale(1.1);
+    background-color: #0074c7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,5);
+}
+
+
+
+/* ############ PARÁMETROS DE LA BARRA LATERAL IZQUIERDA #############*/
+/*####################################################################*/
+
+.menu__lateral nav ul li ul{
+
+    width: 200px;
+    height: auto; 
+    display:flex;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top:90px;
+    left:10px;
+    padding:14px 0px;
+    visibility: hidden; /*LA OCULTO*/
+    opacity: 0; /*LA OCULTO*/
+    box-shadow: 0px 0px 10px 0px;
+    z-index: 10;
+    transition: all 300ms ease;
+
+}
+
+.menu__lateral nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 40px;
+    
+}
+
+.menu__lateral nav ul li ul a{
+
+    display:block;
+    color:#0099e0;
+    padding:6px;
+    padding-left:  14px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.menu__lateral nav ul li ul a:hover{
+
+    background: #0074c7;
+    color:white;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px  rgba(0,0,0,5); 
+}
+
+
+/* ############ PARÁMETROS DE LA BARRA LATERAL DERECHA #############*/
+/*####################################################################*/
+
+.section1{
+
+ float:left;   
+ background-color: white;
+ width: 15%; height: 1000px;
+ padding: 0;
+
+}
+
+.publicidad{
+    
+    height: 250px;
+
+}
+
+.footer{
+
+/* ##################### PARÁMETROS DEL FOOTER #######################*/
+/*####################################################################*/
+
+float:left;
+    background-color: black;
+    top:0;   
+    bottom: 0; 
+    width: 100%; 
+    height: 100px; 
+    color: white;
+    padding: 0;
+
+}
+

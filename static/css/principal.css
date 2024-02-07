@@ -1,0 +1,237 @@
+
+ /* ######################################################################################## */ 
+ /* ######################################################################################## */ 
+                                /* PÁGINA PRINCIPAL */
+ /* ######################################################################################## */ 
+ /* ######################################################################################## */ 
+
+/* ################# CONFIGURACIÓN GENERAL ##################### */
+/*###############################################################*/
+
+
+*{
+    box-sizing: border-box;  
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'nunito sans-serif';
+ }
+
+/* ############################## defino propiedades del body ###############################*/
+/* ##########################################################################################*/
+
+body{
+       
+    width: 100%;
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #1b262c;
+    margin: 0;
+    background-color: #b8dbf9 ;
+    height: auto;
+}
+
+/* #######################  DEFINO EL BANNER DE LA PÁGINA PRONCIPAL ########################*/
+/* #########################################################################################*/
+
+main .banner__superior{
+
+width: 100%;
+height: 50PX;   
+
+}
+
+main .banner__superior img{
+
+    width: 100%;
+    height: auto;
+       
+
+}
+
+.contenedor__principal{
+
+    display:flex;
+    justify-content: space-between;
+    background: white;
+    height: 950px;
+    padding: 0;
+    margin-top: 0;
+
+}
+
+/* ###################### defino propiedades del libro a la izquerda ######################*/
+/* ########################################################################################*/
+
+.contenedor__izq {
+
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 200px; height: 400px;
+    
+}
+
+.contenedor__izq_menu{
+
+    /* height: 200px; */
+   
+}
+
+.contenedor__izq__foto{
+
+    width: 180px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 240px;    
+    color: white;
+}
+
+.contenedor__izq__foto img {
+    
+    width: 180px;
+    margin-bottom: 10px;
+    height: 240px;
+    transition: all 0.3s ease 0s;
+}    
+
+.contenedor__izq__foto img:hover{
+
+    transform: scale(1.1);
+    opacity: 0.5;
+
+
+} 
+
+.contenedor__izq__parrafo{
+
+    background: white;
+    height: 120px;
+    width: 180px;
+    margin-left: 10px;
+    margin-top: 10x;
+    
+}
+ 
+.contenedor__izq__parrafo .boton_compra{
+    
+background-color: brown;
+
+}
+
+/* ######################## defino propiedades del libro al centro ########################*/
+/* ########################################################################################*/
+
+.contenedor__central {
+
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 200px; height: 400px;
+}
+
+.contenedor__central_menu{
+
+   
+}
+
+.contenedor__central__foto{
+
+    width: 180px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 240px;    
+    color: white;
+}
+
+
+.contenedor__central__foto img {
+    
+    width: 180px;
+    margin-bottom: 10px;
+    height: 240px;
+    transition: all 0.3s ease 0s;
+}    
+
+.contenedor__central__foto img:hover{
+
+    transform: scale(1.1);
+    opacity: 0.5;
+
+} 
+
+.contenedor__central__parrafo{
+    
+    background: white;
+    height: 120px;
+    width: 180px;
+    margin-left: 10px;
+    margin-top: 10x;
+
+}
+
+.contenedor__central__parrafo .boton_compra{
+    
+    background-color: brown;
+    
+}
+
+/* ######################## defino propiedades del libro a la derecha ########################*/
+/* ###########################################################################################*/
+
+.contenedor__der {
+
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 200px; height: 400px;
+}
+
+.contenedor__der_menu{
+
+   
+   
+}
+
+.contenedor__der__foto{
+
+    width: 180px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 240px;    
+    color: white;
+
+}
+
+.contenedor__der__foto img {
+    
+    width: 180px;
+    margin-bottom: 10px;
+    height: 240px;
+    transition: all 0.3s ease 0s;
+}  
+
+.contenedor__der__foto img:hover{
+
+    transform: scale(1.1);
+    opacity: 0.5;
+
+} 
+
+
+.contenedor__der__parrafo{
+
+    background: white;
+    height: 120px;
+    width: 180px;
+    margin-left: 10px;
+    margin-top: 10x;
+
+}
+
+.contenedor__der__parrafo .boton_compra{
+    
+    background-color: brown;
+    
+}
