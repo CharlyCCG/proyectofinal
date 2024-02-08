@@ -14,7 +14,7 @@ let conexion = mysql.createConnection({
     host: "localhost",
     database: "proyecto",
     user: "carlos",    
-    password: "CArlos1234" 
+    password: "carlos" 
 }) 
 
 //declaro la carpeta views como la root

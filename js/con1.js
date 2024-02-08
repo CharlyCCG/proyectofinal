@@ -15,7 +15,7 @@ let conexion = mysql.createConnection({
     host:"localhost",
     database:"proyecto",
     user:"carlos",
-    password:"CArlos1234"
+    password:"carlos"
 })
 
 
